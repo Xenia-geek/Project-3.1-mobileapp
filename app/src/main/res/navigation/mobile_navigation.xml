@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/nav_sup">
+
+    <fragment
+        android:id="@+id/nav_calendar"
+        android:name="yakubenko.bstu.organizelaboratoryworks.fragments.calendar.CalendarFragment"
+        android:label="@string/menu_calendar"
+        tools:layout="@layout/fragment_calendar" />
+
+    <fragment
+        android:id="@+id/nav_sup"
+        android:name="yakubenko.bstu.organizelaboratoryworks.fragments.support.SupportFragment"
+        android:label="@string/menu_support"
+        tools:layout="@layout/fragment_support" />
+
+    <fragment
+        android:id="@+id/nav_semestr"
+        android:name="yakubenko.bstu.organizelaboratoryworks.fragments.semestr.SemestrFragment"
+        android:label="@string/menu_semestr"
+        tools:layout="@layout/fragment_semestr" />
+
+
+    <fragment
+        android:id="@+id/nav_subject"
+        android:name="yakubenko.bstu.organizelaboratoryworks.fragments.subject.SubjectFragment"
+        android:label="@string/menu_subject"
+        tools:layout="@layout/fragment_subject" />
+
+
+
+    <fragment
+        android:id="@+id/nav_story"
+        android:name="yakubenko.bstu.organizelaboratoryworks.fragments.story.StoryFragment"
+        android:label="@string/menu_story"
+        tools:layout="@layout/fragment_story" />
+
+    <fragment
+        android:id="@+id/nav_plans"
+        android:name="yakubenko.bstu.organizelaboratoryworks.fragments.planes.PlansFragment"
+        android:label="@string/menu_plans"
+        tools:layout="@layout/fragment_plans" />
+
+    <fragment
+        android:id="@+id/nav_statistic"
+        android:name="yakubenko.bstu.organizelaboratoryworks.fragments.statistic.StatisticFragment"
+        android:label="@string/menu_statistic"
+        tools:layout="@layout/fragment_statistic" />
+
+</navigation>

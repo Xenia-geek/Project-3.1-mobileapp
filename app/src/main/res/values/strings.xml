@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">LabTracker</string>
+    <string name="nav_header_title">Учёба</string>
+    <string name="nav_header_subtitle">Это такой органайзер</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_support">Доп возможность</string>
+    <string name="menu_subject">Предметы</string>
+    <string name="menu_semestr">Семестры</string>
+    <string name="menu_calendar">Календарь событий</string>
+    <string name="menu_story">История сдачи</string>
+    <string name="menu_statistic">Статистика</string>
+    <string name="menu_plans">План сдачи</string>
+</resources>

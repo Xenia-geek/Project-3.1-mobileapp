@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditSubjectActivity"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/sText"
+        android:text="Семестр:"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/namesemestrs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/sText" />
+
+    <TextView
+        android:text="Начало семестра"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/startdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:id="@+id/stText"
+        android:text="Конец семестра:"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sText"/>
+    <EditText
+        android:id="@+id/enddate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@id/sText"
+        android:layout_toRightOf="@id/stText"/>
+
+    <Button
+        android:id="@+id/addbutton"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:layout_below="@id/stText1"
+        android:layout_marginTop="20dp"
+        android:onClick="addClick"
+        android:text="Сохранить" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:layout_below="@id/addbutton"
+        android:onClick="exitClick"
+        android:text="Назад"
+        android:textAlignment="center" />
+
+</LinearLayout>

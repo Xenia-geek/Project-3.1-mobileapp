@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditSubjectActivity"
+    android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/sText"
+                android:text="Название предмета:"
+                android:textSize="20dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/nedit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/sText" />
+
+    <TextView
+        android:text="Семестр"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"/>
+
+    <Spinner
+        android:id="@+id/namesemestr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:id="@+id/stText"
+                android:text="Тип сдачи:"
+                android:textSize="20dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sText"/>
+            <Spinner
+                android:id="@+id/typespinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:layout_below="@id/sText"
+                android:layout_toRightOf="@id/stText"/>
+            <TextView
+                android:id="@+id/stText1"
+                android:text="Количество:"
+                android:textSize="20dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/stText"/>
+            <EditText
+                android:id="@+id/balans"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:inputType="numberDecimal"
+                android:layout_below="@id/stText"
+                android:layout_toRightOf="@id/stText1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="День недели сдачи"
+                 android:textSize="20dp"
+                 android:textColor="@color/colorPrimaryDark"
+                 android:layout_marginTop="4dp"/>
+
+            <Spinner
+                android:id="@+id/weekdayname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"/>
+
+    <Button
+        android:id="@+id/addbutton"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:layout_below="@id/stText1"
+        android:layout_marginTop="20dp"
+        android:onClick="addClick"
+        android:text="Сохранить" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:layout_below="@id/addbutton"
+        android:onClick="exitClick"
+        android:text="Назад"
+        android:textAlignment="center" />
+
+</LinearLayout>
